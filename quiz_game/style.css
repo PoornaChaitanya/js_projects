@@ -85,7 +85,7 @@ body {
   padding: 1rem;
   cursor: pointer;
   text-align: left;
-  transition: all o.3s ease;
+  transition: all 0.3s ease;
 }
 
 .answer-btn:hover {
@@ -124,7 +124,7 @@ body {
 
 #result-screen h1 {
   color: #e86a33;
-  mix-blend-mode: 30px;
+  margin-bottom: 30px;
 }
 
 .result-info {
@@ -163,7 +163,7 @@ button:hover {
 
 /* RESPONSIVE DESIGN */
 
-@media (max-widht: 500px) {
+@media (max-width: 500px) {
   .screen {
     padding: 1rem;
   }
