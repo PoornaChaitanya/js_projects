@@ -88,6 +88,8 @@ function startQuiz() {
   showQuestion();
 }
 
+// DISPLAY BUTTONS
+
 function showQuestion() {
   answersDisabled = false;
 
@@ -114,6 +116,8 @@ function showQuestion() {
     answersContainer.appendChild(button);
   });
 }
+
+// SELECTED BUTTON UI
 
 function selectAnswer(event) {
   if (answersDisabled) return;
@@ -145,6 +149,8 @@ function selectAnswer(event) {
     }
   }, 1000);
 }
+
+// RESULT SCREEN
 
 function showResults() {
   quizScreen.classList.remove("active");
