@@ -22,7 +22,7 @@ body {
   padding: 2rem;
   width: 100%;
   max-width: 800px;
-  box-sizing: 0 10px 25px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 h1 {
@@ -59,7 +59,7 @@ h1::after {
 
 #generate-btn:hover {
   transform: translateY(-2px);
-  box-sizing: 0 6px 10px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 6px 10px rgba(102, 126, 234, 0.3);
 }
 
 #generate-btn:active {
