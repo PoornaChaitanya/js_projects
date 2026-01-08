@@ -81,9 +81,9 @@ function updateSummary() {
 }
 
 function formatCurrency(number) {
-  return new Intl.NumberFormat("en-Us", {
+  return new Intl.NumberFormat("en-IN", {
     style: "currency",
-    currency: "USD",
+    currency: "INR",
   }).format(number);
 }
 
