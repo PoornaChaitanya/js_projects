@@ -65,7 +65,7 @@ function loadBookmarks() {
 function removeBookmarksFromStorage(name, url) {
   let bookmarks = getBookmarksFromStorage();
   bookmarks = bookmarks.filter(
-    (bookmark) => bookmark.name !== name || bookmark.url != url
+    (bookmark) => bookmark.name !== name || bookmark.url !== url
   );
   localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
 }
