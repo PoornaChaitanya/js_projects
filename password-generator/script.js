@@ -134,11 +134,11 @@ copyButton.addEventListener("click", () => {
 
   navigator.clipboard
     .writeText(passwordInput.value)
-    .then(() => showCopSuccess())
+    .then(() => showCopySuccess())
     .catch((error) => console.log("Could not copy:", error));
 });
 
-function showCopSuccess() {
+function showCopySuccess() {
   copyButton.classList.remove("far", "fa-copy");
   copyButton.classList.add("fas", "fa-check");
   copyButton.style.color = "#48bb78";
