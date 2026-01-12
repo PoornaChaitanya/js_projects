@@ -25,9 +25,6 @@ async function fetchCurrencies() {
     option2.value = currency;
     option2.textContent = currency;
     toCurrency.appendChild(option2);
-
-    fromCurrency.value = "USD";
-    toCurrency.value = "INR";
   });
   // Default
   fromCurrency.value = "USD";
