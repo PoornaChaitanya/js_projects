@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weatherly</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="card">
+        <h1 class="title">Weatherly</h1>
+
+        <div class="search">
+          <input type="text" placeholder="Search city..." spellcheck="false" />
+          <button aria-label="Search">🔍</button>
+        </div>
+
+        <p class="error">City not found</p>
+
+        <div class="weather">
+          <img class="icon" alt="weather icon" />
+
+          <h2 class="temp">--°C</h2>
+          <h3 class="city">City</h3>
+
+          <div class="stats">
+            <div class="stat">
+              <span class="value humidity">--%</span>
+              <span class="label">Humidity</span>
+            </div>
+            <div class="stat">
+              <span class="value wind">-- km/h</span>
+              <span class="label">Wind</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

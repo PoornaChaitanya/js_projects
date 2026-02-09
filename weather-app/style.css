@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  width: 100%;
+  padding: 20px;
+}
+
+.card {
+  max-width: 420px;
+  margin: auto;
+  padding: 32px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(14px);
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.title {
+  font-size: 28px;
+  margin-bottom: 24px;
+  letter-spacing: 1px;
+}
+
+.search {
+  display: flex;
+  gap: 12px;
+}
+
+.search input {
+  flex: 1;
+  height: 52px;
+  padding: 0 18px;
+  border-radius: 26px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.search button {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  background: #00feba;
+  color: #111;
+  transition: transform 0.2s ease;
+}
+
+.search button:hover {
+  transform: scale(1.05);
+}
+
+.error {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #ffb4b4;
+  display: none;
+}
+
+.weather {
+  margin-top: 30px;
+  display: none;
+}
+
+.icon {
+  width: 140px;
+  margin-bottom: 10px;
+}
+
+.temp {
+  font-size: 64px;
+  font-weight: 600;
+}
+
+.city {
+  font-size: 22px;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.stat {
+  text-align: center;
+}
+
+.value {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.label {
+  font-size: 13px;
+  opacity: 0.8;
+}
