@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(-45deg, #141e30, #243b55, #000428, #004e92);
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Main Card */
+.calendar {
+  width: 330px;
+  height: 230px;
+  display: flex;
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative;
+  background: #111;
+  box-shadow: 0 0 40px rgba(0, 200, 255, 0.4);
+  transition: 0.4s ease;
+}
+
+.calendar:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 60px rgba(255, 0, 200, 0.6);
+}
+
+/* Neon Border Effect */
+.calendar::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(45deg, #00f5ff, #ff00c8, #00f5ff);
+  z-index: -1;
+  filter: blur(10px);
+  opacity: 0.7;
+}
+
+/* Left Section */
+.left {
+  width: 60%;
+  background: #0f0f0f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: white;
+}
+
+#date {
+  font-size: 90px;
+  font-weight: 700;
+  background: linear-gradient(45deg, #00f5ff, #ff00c8);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#day {
+  font-size: 18px;
+  letter-spacing: 2px;
+  opacity: 0.8;
+}
+
+/* Right Section */
+.right {
+  width: 40%;
+  background: linear-gradient(180deg, #ff00c8, #7b2ff7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  color: white;
+}
+
+#month {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+#year {
+  font-size: 16px;
+  opacity: 0.9;
+}
